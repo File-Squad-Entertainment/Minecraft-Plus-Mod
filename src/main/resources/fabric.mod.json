@@ -1,31 +1,32 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
-	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"id": "mcplus",
+	"version": "1.21",
+	"name": "Minecraft Mod Plus",
+	"description": "Это новый мод улучшающий Minecraft в 100 раз. БОЛЬШЕ ПРЕДМЕТОВ, БОЛЬШЕ МЕХАНИК, БОЛЬШЕ FPS!",
 	"authors": [
-		"Me!"
+		"Savely22827"
+		"File Squad Entertainment"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MPL 2.0", "Apache License 2.0"
 	"icon": "assets/modid/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"com.fabric.MinecraftPlus"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"com.fabric.ExampleModClient"
 		]
 	},
 	"mixins": [
 		"modid.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "mcplus.client.mixins.json",
 			"environment": "client"
 		}
 	],
